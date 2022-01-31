@@ -26,24 +26,11 @@ alias gr='cd $(git rev-parse --show-toplevel)'
 ##############################################################################
 # PROXY 
 ##############################################################################
-if [ -d "/mnt/c/Users/" ] 
-then
-    # on wsl
-    # export all_proxy="socks5://172.18.32.1:7890"
-    # export https_proxy="http://172.18.32.1:7890"
-    # export http_proxy="http://172.18.32.1:7890"
-else
-    # export all_proxy="socks5://127.0.0.1:7890"
-    # export https_proxy="http://127.0.0.1:7890"
-    # export http_proxy="http://127.0.0.1:7890"
-fi
+# export all_proxy="socks5://127.0.0.1:7890"
+# export https_proxy="http://127.0.0.1:7890"
+# export http_proxy="http://127.0.0.1:7890"
 
 
-##############################################################################
-# WIN CONFIGURATION
-##############################################################################
-# Directorys
-alias win_home="cd /mnt/c/Users/yayiji"
 
 
 
