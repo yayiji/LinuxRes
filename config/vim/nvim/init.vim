@@ -42,9 +42,6 @@ set noswapfile
 :set vb t_vb=           " Close error warning
 
 
-
-
-
 " leader
 let mapleader = "s"
 noremap s <Esc>
@@ -55,24 +52,19 @@ nmap <leader>n :noh<cr>
 " nnoremap j jzz
 " nnoremap k kzz
 
-" 复制到剪贴板
+" copy
 nnoremap <leader>d "+yy
 vnoremap <leader>d "+y`>
+" cut
+nnoremap dd "+dd
+vnoremap d "+x
+" paste
 nnoremap <leader>p "+p
 
-" Enter ; in the end of current line
-nmap <leader>; A;<Esc>
-
-nnoremap <leader>u :redo<cr>
-
 " Duplicate current line
-" The :copy command (and its shorthand :t) lets us duplicate one or more lines
-" nnoremap <leader>d :t.<cr>
 nnoremap <leader>y yyp
 
-" Duplicate selected lines: '> and gp
-"   https://stackoverflow.com/questions/731189/vim-duplicate-selection
-"   https://unix.stackexchange.com/questions/5056/cursor-position-after-pasting-in-vi-vim
+" Duplicate selected lines: '> 
 vnoremap <leader>y y'>gp
 
 " Moving: The == re-indents the line to suit its new position
@@ -81,10 +73,19 @@ nnoremap <leader>k :m .-2<CR>==
 vnoremap <leader>j :m '>+1<CR>gv=gv
 vnoremap <leader>k :m '<-2<CR>gv=gv
 
+nnoremap M J 
+nnoremap H :m .+1<CR>== 
+nnoremap L :m .-2<CR>==
+nnoremap J 5j
+nnoremap K 5k
+
 
 vnoremap <leader>v <c-g>
-
 nnoremap S "_dd
+
+nnoremap <leader>u :redo<cr>
+nmap <leader>; A;<Esc>
+
 
 " 在Normal Mode和Visual/Select Mode下，利用Tab键和Shift-Tab键来缩进文本：
 nmap <tab> V>
@@ -111,13 +112,6 @@ nnoremap <C-e> de
 " 向右移动
 nnoremap <C-f> e
 inoremap <C-f> <Esc>e
-
-
-nnoremap M J 
-nnoremap H :m .+1<CR>== 
-nnoremap L :m .-2<CR>==
-nnoremap J 5j
-nnoremap K 5k
 
 
 " terminal vim only
