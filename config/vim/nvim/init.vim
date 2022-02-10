@@ -45,45 +45,42 @@ set noswapfile
 " leader
 let mapleader = "s"
 noremap s <Esc>
-
-" 取消搜索高亮
-nmap <leader>n :noh<cr>
-
-" nnoremap j jzz
-" nnoremap k kzz
+nnoremap <leader>n :noh<cr>
 
 " copy
-nnoremap <leader>d "+yy
-vnoremap <leader>d "+y`>
+nnoremap <leader>c "+yy
+vnoremap <leader>c "+y`[v`]
+
 " cut
-nnoremap dd "+dd
-vnoremap d "+x
+nnoremap <leader>x "+dd
+vnoremap <leader>x "+x
+
+" delete
+nnoremap S dd
+
 " paste
-nnoremap <leader>p "+p
+nnoremap p "+p
+nnoremap P "+P
 
-" Duplicate current line
-nnoremap <leader>y yyp
+" select all
+nnoremap <leader>a ggVG
 
-" Duplicate selected lines: '> 
-vnoremap <leader>y y'>gp
+" select mode
+vnoremap <leader>v <c-g>
 
-" Moving: The == re-indents the line to suit its new position
-nnoremap <leader>j :m .+1<CR>== 
-nnoremap <leader>k :m .-2<CR>==
-vnoremap <leader>j :m '>+1<CR>gv=gv
-vnoremap <leader>k :m '<-2<CR>gv=gv
+
+" Duplicate
+nnoremap <leader>d yyp
+vnoremap <leader>d y'>gp`[V`]
 
 nnoremap M J 
 nnoremap H :m .+1<CR>== 
 nnoremap L :m .-2<CR>==
-nnoremap J 5j
-nnoremap K 5k
+nnoremap J 8jzz
+nnoremap K 8kzz
 
 
-vnoremap <leader>v <c-g>
-nnoremap S "_dd
-
-nnoremap <leader>u :redo<cr>
+nnoremap U :redo<cr>
 nmap <leader>; A;<Esc>
 
 
@@ -112,6 +109,8 @@ nnoremap <C-e> de
 " 向右移动
 nnoremap <C-f> e
 inoremap <C-f> <Esc>e
+
+
 
 
 " terminal vim only
@@ -157,4 +156,5 @@ endif
 colorscheme gruvbox
 set background=dark    " Setting dark mode
 " set background=light   " Setting light mode
+
 
