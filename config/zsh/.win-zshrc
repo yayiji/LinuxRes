@@ -26,12 +26,17 @@ alias gr='cd $(git rev-parse --show-toplevel)'
 ##############################################################################
 # PROXY 
 ##############################################################################
+
+## 获取主机 IP
+## 主机 IP 保存在 /etc/resolv.conf 中
+export hostip=$(cat /etc/resolv.conf |grep -oP '(?<=nameserver\ ).*')
+
 if [ -d "/mnt/c/Users/" ] 
 then
     # on wsl
-    export all_proxy="socks5://172.24.96.1:7890"
-    export https_proxy="http://172.24.96.1:7890"
-    export http_proxy="http://172.24.96.1:7890"
+    export all_proxy="socks5://${hostip}:7890"
+    export https_proxy="http://${hostip}:7890"
+    export http_proxy="http://${hostip}:7890"
 else
     export all_proxy="socks5://127.0.0.1:7890"
     export https_proxy="http://127.0.0.1:7890"
