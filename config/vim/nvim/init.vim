@@ -47,16 +47,22 @@ let mapleader = "s"
 noremap s <Esc>
 nnoremap <leader>n :noh<cr>
 
+nnoremap <cr> o<Esc>
+
 " copy
-nnoremap <leader>c "+yy
-vnoremap <leader>c "+y`[v`]
+nnoremap dd "+yy
+vnoremap dd "+y
 
 " cut
 nnoremap <leader>x "+dd
 vnoremap <leader>x "+x
 
-" delete
+" delete line
 nnoremap S dd
+" delete to beginning of line
+nnoremap ds d^
+" change to beginning of line and insert
+nnoremap cs c^
 
 " paste
 nnoremap p "+p
@@ -71,13 +77,18 @@ vnoremap <leader>v <c-g>
 
 " Duplicate
 nnoremap <leader>d yyp
-vnoremap <leader>d y'>gp`[V`]
+vnoremap <leader>d "+y'>gp
 
 nnoremap M J 
-nnoremap H :m .+1<CR>== 
-nnoremap L :m .-2<CR>==
-nnoremap J 8jzz
-nnoremap K 8kzz
+nnoremap L :m .+1<CR>== 
+nnoremap H :m .-2<CR>==
+nnoremap K 6j
+nnoremap J 6k
+
+noremap j k
+noremap k j
+
+
 
 
 nnoremap U :redo<cr>
@@ -98,7 +109,7 @@ nnoremap <silent> # #zz
 nnoremap <silent> g* g*zz
 
 
-nmap <BS> X
+nmap <BS> <down>
 
 " 向左删除<-- insert模式默认的ctrl+w可以实现
 nmap <C-w> db
@@ -111,6 +122,7 @@ nnoremap <C-f> e
 inoremap <C-f> <Esc>e
 
 
+inoremap <C-c> <Esc>"+yyV
 
 
 " terminal vim only
@@ -156,5 +168,4 @@ endif
 colorscheme gruvbox
 set background=dark    " Setting dark mode
 " set background=light   " Setting light mode
-
 
