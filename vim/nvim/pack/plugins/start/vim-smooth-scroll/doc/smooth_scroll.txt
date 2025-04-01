@@ -1,0 +1,16 @@
+*smooth_scroll.txt* Plugin that makes scrolling smooth
+
+                                                *smooth_scroll-config*
+This plugin requires no configuration.
+
+                                                *'g:ms_per_line'*
+Change this value to control how quickly the window scrolls.  Smaller numbers
+scroll quicker.
+>
+    let g:ms_per_line=8
+<
+                                                *'g:scroll_disable_mapping'*
+The default mapping can be disabled by setting the following variable.
+>
+    let g:scroll_disable_mapping = 1
+<
