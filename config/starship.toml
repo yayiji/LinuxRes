@@ -1,2 +1,2 @@
 [hostname]
-format = "[zui](green)"  # Replace with your own text
+format = "[ZUI](green bold) in "  # Replace with your own text
