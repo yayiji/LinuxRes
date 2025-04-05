@@ -15,6 +15,9 @@ mkdir -p ~/.config
 makeLink "$BASE_DIR/vim/vim" ~/.config/vim
 makeLink "$BASE_DIR/vim/nvim" ~/.config/nvim
 
+#starship
+makeLink "$BASE_DIR/config/starship.toml" ~/.config/starship.toml
+
 # zsh and bash
 makeLink "$BASE_DIR/zsh/.zshrc" ~/.zshrc
 makeLink "$BASE_DIR/zsh/.bashrc" ~/.bashrc
