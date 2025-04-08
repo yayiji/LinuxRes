@@ -4,7 +4,7 @@ alias python="python3"
 alias pip="pip3"
 
 alias cdli="cd ~/li"
-alias cdyt="cd ~/projects/ytdlp"
+alias cdyt="cd ~/proj/ytdlp"
 
 # ~/.zshrc
 eval "$(starship init zsh)"
