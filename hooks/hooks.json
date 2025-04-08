@@ -1,7 +1,8 @@
 [
   {
     "id": "li-update",
-    "execute-command": "~/li/hooks/li-update.sh",
+    "execute-command": "/usr/bin/git pull origin main",
+    "command-working-directory": "~/li",
     "response-message": "li pulled successfully."
   },
   {
