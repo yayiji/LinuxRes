@@ -2,7 +2,7 @@
   {
     "id": "li-update",
     "execute-command": "/usr/bin/git",
-    "command-working-directory": "~/li",
+    "command-working-directory": "/root/li",
     "response-message": "li pulled successfully.",
     "pass-arguments-to-command": [
       { "source": "string", "name": "pull" },
