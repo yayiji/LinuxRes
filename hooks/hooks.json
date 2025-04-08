@@ -1,9 +1,14 @@
 [
   {
     "id": "li-update",
-    "execute-command": "/usr/bin/git pull origin main",
+    "execute-command": "/usr/bin/git",
     "command-working-directory": "~/li",
-    "response-message": "li pulled successfully."
+    "response-message": "li pulled successfully.",
+    "pass-arguments-to-command": [
+      { "source": "string", "name": "pull" },
+      { "source": "string", "name": "origin" },
+      { "source": "string", "name": "main" }
+    ]
   },
   {
     "id": "ytdlp-update",
