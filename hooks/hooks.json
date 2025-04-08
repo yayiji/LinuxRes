@@ -1,9 +1,12 @@
 [
   {
     "id": "li-update",
-    "execute-command": "echo hello",
+    "execute-command": "echo",
     "command-working-directory": "~/li",
-    "response-message": "li pulled successfully."
+    "response-message": "li pulled successfully.",
+    "command-arguments": [
+      "hello"
+    ]
   }
 ]
 
