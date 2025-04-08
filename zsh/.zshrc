@@ -3,9 +3,12 @@ alias ll="eza -alF --group-directories-first"
 alias python="python3"
 alias pip="pip3"
 
+alias cdli="cd ~/li"
+alias cdyt="cd ~/projects/ytdlp"
+
 # ~/.zshrc
 eval "$(starship init zsh)"
 
 
 # Auto-Warpify
-[[ "$-" == *i* ]] && printf 'P$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "zsh", "uname": "Linux" }}œ' 
+[[ "$-" == *i* ]] && printf 'P$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "zsh", "uname": "Linux" }}ï¿½' 
