@@ -1,7 +1,7 @@
 [
   {
     "id": "li-update",
-    "execute-command": "sh ~/li/hooks/li-update.sh",
+    "execute-command": "~/li/hooks/li-update.sh",
     "command-working-directory": "~/li"
   }
 ]
