@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cd ~/li
+cd ~/li || exit
 git pull origin main
