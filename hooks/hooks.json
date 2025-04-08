@@ -2,7 +2,8 @@
   {
     "id": "li-update",
     "execute-command": "~/li/hooks/li-update.sh",
-    "command-working-directory": "~/li"
+    "command-working-directory": "~/li",
+    "response-message": "li pulled successfully."
   }
 ]
 
