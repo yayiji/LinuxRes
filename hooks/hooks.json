@@ -3,12 +3,5 @@
     "id": "li-update",
     "execute-command": "~/li/hooks/li-update.sh",
     "command-working-directory": "~/li"
-  },
-  {
-    "id": "ytdlp-update",
-    "execute-command": "sh ~/li/hooks/ytdlp-update.sh",
-    "command-working-directory": "~/proj/ytdlp",
-    "response-message": "ytdlp pulled successfully.",
-    "include-command-output-in-response": true
   }
 ]
