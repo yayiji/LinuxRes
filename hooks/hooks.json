@@ -1,7 +1,7 @@
 [
   {
     "id": "li-update",
-    "execute-command": "cd",
+    "execute-command": "echo hello",
     "command-working-directory": "~/li",
     "response-message": "li pulled successfully."
   }
