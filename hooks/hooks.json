@@ -1,14 +1,14 @@
 [
   {
     "id": "li-update",
-    "execute-command": "li-update.sh",
+    "execute-command": "echo hello",
     "command-working-directory": "~/li/hooks",
     "response-message": "ytdlp pulled successfully."
   },
   {
     "id": "ytdlp-update",
     "execute-command": "sh ~/li/hooks/ytdlp-update.sh",
-    "command-working-directory": "~/proj/ytdlp",
+    "command-working-directory": "~/li/hooks",
     "response-message": "ytdlp pulled successfully."
   }
 ]
