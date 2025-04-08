@@ -7,8 +7,8 @@
   },
   {
     "id": "ytdlp-update",
-    "execute-command": "sh ~/li/hooks/ytdlp-update.sh",
-    "command-working-directory": "~/li/hooks",
+    "execute-command": "/root/li/hooks/ytdlp-update.sh",
+    "command-working-directory": "/root/proj/ytdlp",
     "response-message": "ytdlp pulled successfully."
   }
 ]
