@@ -1,6 +1,6 @@
 # Run this script with: sh make-links.sh
 
-BASE_DIR=~/LinuxRes
+BASE_DIR=~/li
 
 makeLink() {
   local target=$1
