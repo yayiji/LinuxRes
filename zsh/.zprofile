@@ -1,6 +1,5 @@
 # zprofile
 
-# MY_BINS="~/.local/bin"
-MY_BINS="/root/.local/bin"
+MY_BINS="$HOME/.local/bin"
 export PATH="$PATH:$MY_BINS"
 
