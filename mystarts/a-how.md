@@ -19,17 +19,15 @@ Environment=PATH=/usr/local/bin:/usr/bin:/bin
 [Install]
 WantedBy=multi-user.target
 
-# Two
-Reload the systemd daemon to recognize the new service:
-- sudo systemctl daemon-reload
-Enable the service to start on boot: 
-- sudo systemctl enable webhook.service 
-Start the webhook service immediately: 
-- sudo systemctl start webhook.service
 
-# Three
-Check the status to ensure it’s active and running: 
-- sudo systemctl status webhook.service 
-By default, output goes to systemd’s journal. View logs with: 
-- journalctl -u webhook.service 
+systemctl daemon-reload                 # Reload the systemd daemon to recognize the new service
+systemctl enable your.service           # run it at boot
+systemctl start your.service            # start it now
+systemctl restart your.service          # restart it
+
+systemctl status your.service           # check current status
+systemctl list-units --type=service     # list all services
+journalctl -u webhook.service           # View logs
+
+
 
