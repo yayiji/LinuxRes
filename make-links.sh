@@ -26,4 +26,7 @@ makeLink "$BASE_DIR/zsh/.zprofile" ~/.zprofile
 # git
 makeLink "$BASE_DIR/git/.gitconfig" ~/.gitconfig
 
+# mystart
+makeLink "$BASE_DIR/mystarts/webhook.service" /etc/systemd/system/webhook.service
+
 echo "Done!"
