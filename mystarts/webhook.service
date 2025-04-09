@@ -3,8 +3,8 @@ Description=Webhook Server for Git Auto-Pull
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/webhook -hooks ~/li/hooks/hooks.json -port 9000
-WorkingDirectory=~/li
+ExecStart=/usr/bin/webhook -hooks /root/li/hooks/hooks.json -port 9000
+WorkingDirectory=/root/li
 Restart=always
 
 [Install]
