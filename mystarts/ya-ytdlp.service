@@ -3,7 +3,7 @@ Description=YT-DLP Server for subtitles
 After=network.target
 
 [Service]
-ExecStart=/usr/local/bin/pm2 start /root/proj/ytdlp/index.js --name ytdlp
+ExecStart=/usr/bin/node /root/proj/ytdlp/index.js
 WorkingDirectory=/root/proj/ytdlp
 Restart=always
 
