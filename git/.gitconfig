@@ -10,3 +10,6 @@
 [credential "https://gist.github.com"]
 	helper = 
 	helper = !/usr/bin/gh auth git-credential
+[alias]
+	oneline = log --pretty=format:'%C(yellow)%ad%Creset %C(cyan)%h%Creset %s' --date=short
+	one = log -n 10 --pretty=format:'%C(cyan)%h%Creset %s %C(green)(%ar)%Creset'
