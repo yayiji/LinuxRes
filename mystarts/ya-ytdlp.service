@@ -1,0 +1,11 @@
+[Unit]
+Description=YT-DLP Server for subtitles
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/pm2 start /root/proj/ytdlp/index.js --name ytdlp
+WorkingDirectory=/root/proj/ytdlp
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

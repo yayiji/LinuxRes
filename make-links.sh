@@ -28,5 +28,6 @@ makeLink "$BASE/git/.gitconfig" ~/.gitconfig
 
 # mystart
 makeLink "$BASE/mystarts/webhook.service" /etc/systemd/system/webhook.service
+makeLink "$BASE/mystarts/ya-ytdlp.service" /etc/systemd/system/ya-ytdlp.service
 
 echo "Done!"
