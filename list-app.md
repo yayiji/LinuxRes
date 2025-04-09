@@ -11,5 +11,11 @@
 
 
 # Servers may need to run in background
-- YT-DLP
-- 
+- YT-DLP: 
+    - npm install -g pm2
+    - got to ~/proj/ytdlp
+    - pm2 start index.js --name ytdlp
+    - pm2 list (to view the runing apps)
+- wehook: 
+    - webhook -hooks ~/li/hooks/hooks.json &
+
