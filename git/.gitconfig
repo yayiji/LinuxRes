@@ -11,5 +11,5 @@
 	helper = 
 	helper = !/usr/bin/gh auth git-credential
 [alias]
-	lg = log -n 3 --pretty=format:'%C(cyan)%h%Creset %s %C(green)(%ar)%Creset'
+	lg = log -n 10 --pretty=format:'%C(cyan)%h%Creset %s %C(green)(%ar)%Creset'
 	one = log -n 3 --pretty=format:'%C(cyan)%h%Creset %s %C(green)(%ar)%Creset'
