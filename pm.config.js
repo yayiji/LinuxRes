@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: "git-update",
+      name: "hooks",
       script: "/root/li/hooks/start-hooks.sh",
       interpreter: "/usr/bin/bash", // No interpreter, as it’s a binary
       // optional: define cwd if needed
