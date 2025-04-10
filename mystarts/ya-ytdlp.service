@@ -1,6 +1,5 @@
 [Unit]
 Description=YT-DLP Server for subtitles
-After=network.target
 
 [Service]
 ExecStart=/usr/bin/node /root/proj/ytdlp/index.js
