@@ -2,7 +2,7 @@
 Description=Webhook Server for Git Auto-Pull
 
 [Service]
-ExecStart=/usr/bin/webhook -hooks /root/li/hooks/hooks.json -port 9000
+ExecStart=/root/li/hooks/start-hooks.sh
 Restart=always
 
 [Install]
