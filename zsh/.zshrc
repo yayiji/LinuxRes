@@ -1,5 +1,5 @@
 # aliases
-alias ll="eza -alF --time-style=relative --group-directories-first"
+alias ll="eza -alF --time-style=relative --time=modified --group-directories-first"
 alias python="python3"
 alias pip="pip3"
 
