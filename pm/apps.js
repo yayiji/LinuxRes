@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: "webhook",
+      name: "git-update-hooks",
       script: "webhook",
       args: "-hooks ~/li/hooks/hooks.json -port 9000",
       // optional: define cwd if needed
