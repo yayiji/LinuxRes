@@ -26,8 +26,8 @@ makeLink "$BASE/zsh/.zprofile" ~/.zprofile
 # git
 makeLink "$BASE/git/.gitconfig" ~/.gitconfig
 
-# mystart
-# makeLink "$BASE/daemon/ya-webhook.service" /etc/systemd/system/ya-webhook.service
-# makeLink "$BASE/daemon/ya-ytdlp.service" /etc/systemd/system/ya-ytdlp.service
+# daemon
+makeLink "$BASE/daemon/ya-webhook.service" /etc/systemd/system/ya-webhook.service
+makeLink "$BASE/daemon/ya-ytdlp.service" /etc/systemd/system/ya-ytdlp.service
 
 echo "Done!"
