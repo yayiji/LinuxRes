@@ -3,7 +3,6 @@ Description=YT-DLP Server for subtitles
 
 [Service]
 ExecStart=/usr/bin/node /root/proj/ytdlp/index.js
-WorkingDirectory=/root/proj/ytdlp
 Restart=always
 
 [Install]
