@@ -2,6 +2,7 @@
 alias ll="eza -alF --time-style=relative --time=modified --group-directories-first"
 alias python="python3"
 alias pip="pip3"
+alias pm="pm2"
 
 alias cdli="cd ~/li"
 alias cdyt="cd ~/proj/ytdlp"
