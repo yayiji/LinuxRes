@@ -2,7 +2,7 @@
   {
     "id": "ytdlp-update",
     "execute-command": "/root/li/hooks/ytdlp-update.sh",
-    "command-working-directory": "/root/proj/ytdlp",
+    "command-working-directory": "/root/li",
     "response-message": "ytdlp pulled successfully."
   },
   {
