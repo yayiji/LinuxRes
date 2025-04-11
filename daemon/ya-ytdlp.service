@@ -4,6 +4,7 @@ Description=YT-DLP Server for subtitles
 [Service]
 ExecStart=/usr/bin/node /root/proj/ytdlp/index.js
 Restart=always
+User=root
 
 [Install]
 WantedBy=multi-user.target
