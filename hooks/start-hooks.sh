@@ -1,3 +1,3 @@
 #!/bin/bash
 
-/usr/bin/webhook -hooks ~/li/hooks/hooks.json -port 9000 -verbose
+/usr/bin/webhook -hooks /root/li/hooks/hooks.json -port 9000 -verbose
