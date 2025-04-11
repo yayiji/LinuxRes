@@ -6,12 +6,6 @@
     "response-message": "ytdlp pulled successfully."
   },
   {
-    "id": "okok",
-    "execute-command": "/root/li/hooks/okok-update.sh",
-    "command-working-directory": "/root/proj/ytdlp",
-    "response-message": "ytdlp pulled successfully."
-  },
-  {
     "id": "li-update",
     "execute-command": "/root/li/hooks/li-update.sh",
     "command-working-directory": "/root/li",
