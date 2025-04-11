@@ -9,7 +9,11 @@ makeLink() {
   ln -s "$target" "$link_name"
 }
 
+# Create the necessary directory. 
 mkdir -p ~/.config
+mkdir -p ~/tmp
+mkdir -p ~/proj
+mkdir -p ~/li
 
 # vim and nvim
 makeLink "$BASE/vim/vim" ~/.config/vim
