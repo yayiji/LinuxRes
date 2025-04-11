@@ -4,6 +4,7 @@ Description=Webhook Server for Git Auto-Pull
 [Service]
 ExecStart=/root/li/hooks/start-hooks.sh
 Restart=always
+User=root
 
 [Install]
 WantedBy=multi-user.target
