@@ -7,7 +7,7 @@
   },
   {
     "id": "okok",
-    "execute-command": "/root/li/hooks/ytdlp-update.sh",
+    "execute-command": "/root/li/hooks/okok-update.sh",
     "command-working-directory": "/root/proj/ytdlp",
     "response-message": "ytdlp pulled successfully."
   },
