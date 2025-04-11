@@ -9,6 +9,7 @@ alias dmls="systemctl list-units --type=service | grep"
 
 alias cdli="cd ~/li"
 alias cdyt="cd ~/proj/ytdlp"
+alias cdtmp="cd ~/tmp"
 
 # ~/.zshrc
 eval "$(starship init zsh)"
